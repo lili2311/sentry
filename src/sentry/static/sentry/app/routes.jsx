@@ -35,7 +35,7 @@ import ProjectTags from 'app/views/projectTags';
 import ProjectChooser from 'app/views/projectChooser';
 import ProjectDashboard from 'app/views/projectDashboard';
 import ProjectDataForwarding from 'app/views/projectDataForwarding';
-import ProjectDebugSymbols from 'app/views/projectDebugSymbols';
+import ProjectDebugFiles from 'app/views/projectDebugFiles';
 import ProjectDetails from 'app/views/projectDetails';
 import ProjectDocsContext from 'app/views/projectInstall/docsContext';
 import ProjectEvents from 'app/views/projectEvents';
@@ -311,7 +311,7 @@ function routes() {
       <Route
         path="debug-symbols/"
         name="Debug Information Files"
-        component={errorHandler(ProjectDebugSymbols)}
+        component={errorHandler(ProjectDebugFiles)}
       />
       <Route
         path="processing-issues/"
@@ -605,11 +605,9 @@ function routes() {
           )}
       />
 
-
       <Redirect from="/account/" to="/settings/account/details/" />
 
       <Route path="/settings/" name="Settings" component={SettingsWrapper}>
-
         <IndexRoute
           getComponent={(loc, cb) =>
             import(/* webpackChunkName: "SettingsIndex" */ './views/settings/settingsIndex').then(
