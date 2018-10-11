@@ -102,6 +102,7 @@ class OrganizationEventsContainer extends React.Component {
   }
 }
 export default withRouter(withOrganization(OrganizationEventsContainer));
+export {OrganizationEventsContainer};
 
 const Content = styled(Flex)`
   flex-direction: column;
