@@ -39,7 +39,7 @@ from sentry.tasks.integrations import kick_off_status_syncs
 from sentry.utils import metrics
 from sentry.utils.cache import default_cache
 from sentry.utils.canonical import CanonicalKeyDict
-from sentry.utils.db import get_db_engine
+from sentry.utils.db import is_postgres, is_mysql
 from sentry.utils.safe import safe_execute, trim, trim_dict, get_path
 from sentry.utils.strings import truncatechars
 from sentry.utils.validators import is_float
@@ -255,10 +255,10 @@ except ImportError:
             return
 
         def evaluate(self, node, qn, connection):
-            engine = get_db_engine(getattr(connection, 'alias', 'default'))
-            if engine.startswith('postgresql'):
+            db = getattr(connection, 'alias', 'default')
+            if is_postgres(db):
                 sql = 'log(times_seen) * 600 + last_seen::abstime::int'
-            elif engine.startswith('mysql'):
+            elif is_mysql(db):
                 sql = 'log(times_seen) * 600 + unix_timestamp(last_seen)'
             else:
                 # XXX: if we cant do it atomically let's do it the best we can
@@ -278,10 +278,10 @@ else:
             return self.group.get_score() if self.group else 0
 
         def as_sql(self, compiler, connection, function=None, template=None):
-            engine = get_db_engine(getattr(connection, 'alias', 'default'))
-            if engine.startswith('postgresql'):
+            db = getattr(connection, 'alias', 'default')
+            if is_postgres(db):
                 sql = 'log(times_seen) * 600 + last_seen::abstime::int'
-            elif engine.startswith('mysql'):
+            elif is_mysql(db):
                 sql = 'log(times_seen) * 600 + unix_timestamp(last_seen)'
             else:
                 # XXX: if we cant do it atomically let's do it the best we can
