@@ -9,6 +9,7 @@ import {t, tct} from 'app/locale';
 import Link from 'app/components/link';
 import BarChart from 'app/components/charts/barChart';
 import LineChart from 'app/components/charts/lineChart';
+import Pagination from 'app/components/pagination';
 import space from 'app/styles/space';
 
 import {addSuccessMessage, addErrorMessage} from 'app/actionCreators/indicator';
@@ -205,7 +206,8 @@ export default class Result extends React.Component {
   }
 
   render() {
-    const {data: {baseQuery, byDayQuery}, savedQuery} = this.props;
+    const {data: {baseQuery, byDayQuery, pageLinks}, savedQuery} = this.props;
+
     const {view} = this.state;
 
     const basicChartData = getChartData(baseQuery.data.data, baseQuery.query);
@@ -279,6 +281,7 @@ export default class Result extends React.Component {
             {this.renderNote()}
           </ChartWrapper>
         )}
+        <Pagination pageLinks={pageLinks} />
         {this.renderSummary()}
       </Box>
     );

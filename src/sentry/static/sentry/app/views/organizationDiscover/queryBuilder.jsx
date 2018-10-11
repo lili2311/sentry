@@ -51,7 +51,7 @@ export default function createQueryBuilder(initial = {}, organization) {
   };
 
   /**
-   * Loads tags keys for user's projectsand updates `tags` with the result.
+   * Loads tags keys for user's projects and updates `tags` with the result.
    * If the request fails updates `tags` to be the hardcoded list of predefined
    * promoted tags.
    *
@@ -187,8 +187,13 @@ export default function createQueryBuilder(initial = {}, organization) {
 
     return api
       .requestPromise(endpoint, {
+        isjqXHR: true,
         method: 'POST',
         data,
+      })
+      .then(res => {
+        res.data.pageLinks = res.jqXHR.getResponseHeader('Link');
+        return res.data;
       })
       .catch(() => {
         throw new Error(t('An error occurred'));

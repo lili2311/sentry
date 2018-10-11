@@ -100,6 +100,11 @@ describe('Query Builder', function() {
       discoverMock = MockApiClient.addMockResponse({
         url: '/organizations/org-slug/discover/query/',
         method: 'POST',
+        body: {
+          data: [],
+          timing: {},
+          meta: [],
+        },
       });
     });
 
