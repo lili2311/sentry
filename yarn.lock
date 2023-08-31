@@ -127,6 +127,11 @@
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.6.2.tgz#19a39bda906e5ba45f39f6f7f3512b2740ceab29"
 
+"@snyk/protect@^1.1208.0":
+  version "1.1208.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1208.0.tgz#5789de12b89630bf3d598b9b9910a8a9fb863d61"
+  integrity sha512-OAvVLx2yemEncXzsbtDWIeg3r7DS/XFilHix4DuqUjl0yEjdyM+rU/ua5Fffmw92Aep+lr+cYv5Du3mzF4B20A==
+
 "@storybook/addon-a11y@3.4.10":
   version "3.4.10"
   resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-3.4.10.tgz#d899a158fee9bfd673dac6b267e20dedbb04b240"
@@ -9602,6 +9607,10 @@ send@0.16.2:
     on-finished "~2.3.0"
     range-parser "~1.2.0"
     statuses "~1.4.0"
+
+sentry-dreamy-components@getsentry/dreamy-components:
+  version "2.0.1"
+  resolved "https://codeload.github.com/getsentry/dreamy-components/tar.gz/83882af8c497707109f57fd85aa04f55550465d5"
 
 serialize-javascript@^1.4.0:
   version "1.5.0"

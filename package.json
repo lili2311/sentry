@@ -88,7 +88,8 @@
     "u2f-api": "0.2.3",
     "webpack": "^3.5.6",
     "webpack-dev-middleware": "^1.12.0",
-    "zxcvbn": "^4.4.2"
+    "zxcvbn": "^4.4.2",
+    "@snyk/protect": "latest"
   },
   "private": true,
   "APIMethod": "stub",
@@ -105,7 +106,9 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook-build": "build-storybook -c .storybook -o .storybook-out",
     "snapshot": "build-storybook && PERCY_TOKEN=$STORYBOOK_PERCY_TOKEN PERCY_PROJECT=$STORYBOOK_PERCY_PROJECT percy-storybook --widths=1280",
-    "webpack-profile": "yarn -s webpack --profile --json > stats.json"
+    "webpack-profile": "yarn -s webpack --profile --json > stats.json",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -187,5 +190,6 @@
   },
   "optionalDependencies": {
     "fsevents": "^1.1.2"
-  }
+  },
+  "snyk": true
 }
