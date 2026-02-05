@@ -1,0 +1,286 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - less > request > extend:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:extend:20180424'
+        path: less > request > extend
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:extend:20180424'
+        path: >-
+          webpack > watchpack > chokidar > fsevents > node-pre-gyp > request >
+          extend
+  'npm:hoek:20180212':
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > hoek:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:hoek:20180212'
+        path: webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > hoek
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:hoek:20180212'
+        path: >-
+          webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > boom
+          > hoek
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:hoek:20180212'
+        path: >-
+          webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > sntp
+          > hoek
+    - less > request > hawk > hoek:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:hoek:20180212'
+        path: less > request > hawk > hoek
+    - less > request > hawk > boom > hoek:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:hoek:20180212'
+        path: less > request > hawk > boom > hoek
+    - less > request > hawk > sntp > hoek:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:hoek:20180212'
+        path: less > request > hawk > sntp > hoek
+    - less > request > hawk > cryptiles > boom > hoek:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:hoek:20180212'
+        path: less > request > hawk > cryptiles > boom > hoek
+  SNYK-JS-LODASH-567746:
+    - babel-core > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-core > lodash
+    - babel-plugin-lodash > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-plugin-lodash > lodash
+    - lodash-webpack-plugin > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: lodash-webpack-plugin > lodash
+    - react-mentions > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: react-mentions > lodash
+    - babel-plugin-lodash > babel-types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-plugin-lodash > babel-types > lodash
+    - babel-core > babel-generator > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-core > babel-generator > lodash
+    - babel-plugin-dynamic-import-node > babel-template > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-plugin-dynamic-import-node > babel-template > lodash
+    - babel-plugin-transform-builtin-extend > babel-template > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-plugin-transform-builtin-extend > babel-template > lodash
+    - babel-plugin-transform-decorators-legacy > babel-template > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-plugin-transform-decorators-legacy > babel-template > lodash
+    - babel-core > babel-register > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-core > babel-register > lodash
+    - babel-gettext-extractor > babel-core > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-gettext-extractor > babel-core > lodash
+    - react-mentions > substyle > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: react-mentions > substyle > lodash
+    - extract-text-webpack-plugin > async > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: extract-text-webpack-plugin > async > lodash
+    - webpack > async > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: webpack > async > lodash
+    - babel-core > babel-generator > babel-types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-core > babel-generator > babel-types > lodash
+    - babel-gettext-extractor > babel-core > babel-generator > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-gettext-extractor > babel-core > babel-generator > lodash
+    - babel-plugin-dynamic-import-node > babel-template > babel-traverse > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-plugin-dynamic-import-node > babel-template > babel-traverse >
+          lodash
+    - babel-plugin-transform-builtin-extend > babel-template > babel-traverse > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-plugin-transform-builtin-extend > babel-template >
+          babel-traverse > lodash
+    - babel-plugin-transform-decorators-legacy > babel-template > babel-traverse > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-plugin-transform-decorators-legacy > babel-template >
+          babel-traverse > lodash
+    - babel-core > babel-helpers > babel-template > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-core > babel-helpers > babel-template > lodash
+    - babel-gettext-extractor > babel-core > babel-register > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-gettext-extractor > babel-core > babel-register > lodash
+    - babel-core > babel-register > babel-core > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-core > babel-register > babel-core > lodash
+    - emotion > babel-plugin-emotion > @babel/helper-module-imports > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: emotion > babel-plugin-emotion > @babel/helper-module-imports > lodash
+    - react-emotion > babel-plugin-emotion > @babel/helper-module-imports > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          react-emotion > babel-plugin-emotion > @babel/helper-module-imports >
+          lodash
+    - babel-preset-latest > babel-preset-es2015 > babel-plugin-transform-es2015-block-scoping > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-preset-latest > babel-preset-es2015 >
+          babel-plugin-transform-es2015-block-scoping > lodash
+    - babel-gettext-extractor > babel-core > babel-generator > babel-types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-gettext-extractor > babel-core > babel-generator > babel-types >
+          lodash
+    - babel-plugin-dynamic-import-node > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-plugin-dynamic-import-node > babel-template > babel-traverse >
+          babel-types > lodash
+    - babel-plugin-transform-builtin-extend > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-plugin-transform-builtin-extend > babel-template >
+          babel-traverse > babel-types > lodash
+    - babel-plugin-transform-decorators-legacy > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-plugin-transform-decorators-legacy > babel-template >
+          babel-traverse > babel-types > lodash
+    - babel-preset-react > babel-plugin-transform-react-jsx > babel-helper-builder-react-jsx > babel-types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-preset-react > babel-plugin-transform-react-jsx >
+          babel-helper-builder-react-jsx > babel-types > lodash
+    - babel-core > babel-helpers > babel-template > babel-traverse > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: babel-core > babel-helpers > babel-template > babel-traverse > lodash
+    - babel-gettext-extractor > babel-core > babel-helpers > babel-template > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-gettext-extractor > babel-core > babel-helpers > babel-template
+          > lodash
+    - babel-preset-latest > babel-preset-es2015 > babel-plugin-transform-es2015-block-scoping > babel-template > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-preset-latest > babel-preset-es2015 >
+          babel-plugin-transform-es2015-block-scoping > babel-template > lodash
+    - babel-gettext-extractor > babel-core > babel-register > babel-core > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-gettext-extractor > babel-core > babel-register > babel-core >
+          lodash
+    - babel-preset-latest > babel-preset-es2015 > babel-plugin-transform-es2015-classes > babel-helper-define-map > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-preset-latest > babel-preset-es2015 >
+          babel-plugin-transform-es2015-classes > babel-helper-define-map >
+          lodash
+    - babel-preset-latest > babel-preset-es2015 > babel-plugin-transform-es2015-sticky-regex > babel-helper-regex > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-preset-latest > babel-preset-es2015 >
+          babel-plugin-transform-es2015-sticky-regex > babel-helper-regex >
+          lodash
+    - emotion > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          emotion > babel-plugin-emotion > @babel/helper-module-imports >
+          @babel/types > lodash
+    - react-emotion > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          react-emotion > babel-plugin-emotion > @babel/helper-module-imports >
+          @babel/types > lodash
+    - babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-core > babel-helpers > babel-template > babel-traverse >
+          babel-types > lodash
+    - babel-gettext-extractor > babel-core > babel-helpers > babel-template > babel-traverse > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-gettext-extractor > babel-core > babel-helpers > babel-template
+          > babel-traverse > lodash
+    - babel-preset-latest > babel-preset-es2015 > babel-plugin-transform-es2015-block-scoping > babel-template > babel-traverse > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-preset-latest > babel-preset-es2015 >
+          babel-plugin-transform-es2015-block-scoping > babel-template >
+          babel-traverse > lodash
+    - babel-gettext-extractor > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-gettext-extractor > babel-core > babel-helpers > babel-template
+          > babel-traverse > babel-types > lodash
+    - babel-preset-latest > babel-preset-es2015 > babel-plugin-transform-es2015-block-scoping > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-preset-latest > babel-preset-es2015 >
+          babel-plugin-transform-es2015-block-scoping > babel-template >
+          babel-traverse > babel-types > lodash
+  'npm:moment:20160126':
+    - moment-timezone > moment:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:moment:20160126'
+        path: moment-timezone > moment
+  'npm:stringstream:20180511':
+    - less > request > stringstream:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:stringstream:20180511'
+        path: less > request > stringstream
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2026-02-05T04:21:55.904Z'
+        id: 'npm:stringstream:20180511'
+        path: >-
+          webpack > watchpack > chokidar > fsevents > node-pre-gyp > request >
+          stringstream
