@@ -61,7 +61,7 @@
     "prop-types": "^15.6.0",
     "query-string": "2.4.2",
     "raven-js": "^3.26.3",
-    "react": "16.5.1",
+    "react": "19.2.4",
     "react-addons-css-transition-group": "15.6.2",
     "react-autosize-textarea": "^4.0.0",
     "react-bootstrap": "^0.32.0",
